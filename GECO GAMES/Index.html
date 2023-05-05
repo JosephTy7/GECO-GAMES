@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GECO</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.navbar a:hover {
+			background-color: #755757;
+			color: black;
+		}
+
+		.navbar-right {
+			float: right;
+		}
+
+		.navbar-right a {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.navbar-right a:hover {
+			background-color: #555;
+			color: white;
+		}
+
+		.navbar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.navbar-right {
+			float: right;
+		}
+		
+		.navbar-right a {
+			background-color: #ddd;
+			color: black;
+		}
+		
+		.navbar-right a:hover {
+			background-color: #555;
+			color: white;
+		}
+
+		.page-title {
+			text-align: center;
+			margin-top: 60px;
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+
+		.search-bar {
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	
+		.search-input {
+			padding: 10px;
+			font-size: 18px;
+			border: none;
+			border-radius: 5px 0 0 5px;
+			width: 60%;
+		}
+
+	
+		.search-button {
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 18px;
+			border: none;
+			border-radius: 0 5px 5px 0;
+			cursor: pointer;
+			width: 20%;
+		}
+
+		
+		.hero {
+			background-image: url('/Images/mobile.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			height: calc(100vh - 60px);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		.hero h1 {
+			color: white;
+			font-size: 72px;
+			margin: 0;
+			text-shadow: 2px 2px #000;
+		}
+
+		.device-categories {
+			margin-top: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		.device-category-button, .genre-button {
+			margin: 10px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 20px;
+			font-size: 18px;
+			cursor: pointer;
+			background-color: #4CAF50;
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		.device-category-button:hover, .genre-button:hover {
+			background-color: #3e8e41;
+		}
+
+
+		.game-section {
+			margin: 40px auto;
+			max-width: 1200px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+		.game-card {
+			width: 300px;
+			margin: 20px;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		.game-image {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+		}
+
+
+		.game-details {
+			padding: 20px;
+			background-color: #f2f2f2;
+		}
+		.game-title {
+			font-size: 24px;
+			margin: 0;
+		}
+
+
+		.game-description {
+			font-size: 18px;
+			margin: 10px 0;
+		}
+
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 30px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.footer-left {
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.footer-right {
+			display: flex;
+			align-items: center;
+		}
+
+		.footer-link {
+			color: #fff;
+			text-decoration: none;
+			margin-left: 30px;
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="navbar">
+        <a href="#">GECO</a>
+		<a href="#">GAMES</a>
+		<a href="#">COMMUNITY</a>
+		<a href="#">SUPPORT</a>
+		<a href="#">DEVELOPERS</a>
+		<a href="#">CONTACT US</a>
+		<div class="navbar-right">
+			<a href="#">Sign in</a>
+			<a href="#">Log in</a>
+		</div>
+	</div>
+    <div class="page-title"></div>
+
+	<div class="search-bar">
+		<input type="text" class="search-input" placeholder="Search for your game">
+		<button class="search-button">Search</button>
+	</div>
+
+	<section class="hero">
+		<h1>GECO</h1>
+	</section>
+
+
+	<section class="device-categories">
+		<button class="device-category-button">iOS</button>
+		<button class="device-category-button">Android</button>
+		<button class="genre-button">Action</button>
+		<button class="genre-button">Casual</button>
+		<button class="genre-button">Adventure</button>
+	</section>
+
+
+	<section class="game-section">
+		<div class="game-card">
+			<img class="game-image" src="/Images/Letter Loopjpg.jpg" alt="Letter Loop">
+			<div class="game-details">
+				<h2 class="game-title">Letter Loop</h2>
+				<p class="game-description">A word puzzle game that will test your vocabulary and spelling skills.<br>COMING SOON</p>
+			</div>
+		</div>
+		<div class="game-card">
+			<img class="game-image" src="/Images/Our last prayer.jpg" alt="Our Last Prayer">
+			<div class="game-details">
+				<h2 class="game-title">Our Last Prayer</h2>
+				<p class="game-description">An Online 2D Game Where players Get To Compete With One Another And Battle It Out and Try to Survive</p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer-left">
+			<p>© 2023 GECO. All rights reserved.</p>
+		</div>
+		<div class="footer-right">
+			<p>Follow us:</p>
+			<a class="footer-link" href="#">Facebook</a>
+			<a class="footer-link" href="#">Twitter</a>
+			<a class="footer-link" href="#">Instagram</a>
+		</div>
+	</footer>
+
+	<script>
+		let currentYear = new Date().getFullYear();
+		let footerText = document.querySelector('.footer-left p');
+		footerText.innerHTML = `© ${currentYear} GECO. All rights reserved.`;
+        
+	</script>
+    
+</body>
+</html>
